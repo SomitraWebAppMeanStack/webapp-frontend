@@ -1,0 +1,384 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: gtc, Helvetica Neue, sans-serif;
+    /*font-family: 'United Sans Rg Md';*/
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 25px;
+    font-family: 'United Sans Rg Bd';
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+    font-family: 'United Sans Rg Bd';
+    font-weight: 400;
+}
+
+h2,
+.h2 {
+    font-size: 50px;
+    font-family: 'United Sans Rg Bk';
+}
+
+h5,
+h6 {
+    font-family: gtc, Helvetica Neue, sans-serif;
+}
+
+.text-underline {
+    text-decoration: underline!important;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.mob-hide {
+    display: inline-block;
+}
+
+.mob-show {
+    display: none;
+}
+
+.container {
+    width: 100%!important;
+    max-width: 1240px!important;
+    transition: all ease-in-out .3;
+    -webkit-transition: all ease-in-out .3;
+    -moz-transition: all ease-in-out .3;
+}
+
+
+/* navbar background color  */
+
+.headerWrapper {
+    /* background-color: transparent!important; */
+    padding: 10px 0px 10px;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    transition: all ease-in-out .3;
+    -webkit-transition: all ease-in-out .3;
+    -moz-transition: all ease-in-out .3;
+}
+
+.headerWrapper.sticky .container {
+    max-width: 98%!important;
+}
+
+.headerWrapper.sticky {
+    padding: 15px 0px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.navbar-brand img {
+    width: auto;
+    max-height: 80%;
+}
+
+.navbar-brand {
+    height: 40px;
+    padding: 0px;
+}
+
+.mt-100vh {
+    margin-top: 100vh;
+}
+
+.bannerBox {
+    padding: 100px 0px 0px;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #111;
+}
+
+.bannerBox p {
+    margin-bottom: 10px;
+}
+
+.bannerBox h2 {
+    margin: 250px 0px 130px;
+    position: relative;
+    z-index: 1;
+}
+
+.bannerBox h2:after {
+    content: '';
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    border: 10px solid #ae0000;
+    transform: translate(-50%, -50%);
+}
+
+.bannerBox .down-arrow {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.bannerBox .down-arrow i {
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes mymove {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .3;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.awardBox {
+    padding: 70px 0px;
+    width: 100%;
+    float: left;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+    font-size: 20px;
+    color: #fff;
+    background-color: #ae0000;
+}
+
+.awardBox h2 {
+    text-transform: uppercase;
+}
+
+.awardBox img {
+    max-width: 100%;
+    max-height: 70px;
+    height: 100%;
+}
+
+.direction-row-reverse {
+    flex-direction: row-reverse!important;
+}
+
+.oursecretBox .d-flex {
+    flex-direction: column;
+}
+
+.swiper-slide.bg-dark {
+    background-color: #000!important;
+}
+
+.bg-cover {
+    background-size: cover!important;
+}
+
+.oursecretBox {
+    padding: 80px 0px;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.oursecretBox:after {
+    content: '';
+    width: 130%;
+    height: 150px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    transform: rotate(5deg) translate(-15%, 62%);
+    -moz-transform: rotate(5deg) translate(-15%, 62%);
+    -webkit-transform: rotate(5deg) translate(-15%, 62%);
+    background-color: #ffffff;
+}
+
+@media (max-width: 767.98px) { 
+
+    .oursecretBox:after {
+ 
+        width: 130%;
+        height: 0;
+       
+    }
+
+
+
+ }
+
+
+.oursecretBox.bg-dark:after {
+    display: none;
+}
+
+.oursecretBox.red-trangle:after {
+    background-color: #ae0000;
+}
+
+.oursecretBox .img {
+    width: 100%;
+    right: 0px;
+    padding-top: 100%;
+    z-index: 111;
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.oursecretBox ul {
+    margin: 20px 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.oursecretBox ul li {
+    margin-bottom: 20px;
+    display: block;
+    padding-left: 30px;
+    position: relative;
+}
+
+.oursecretBox ul li:after {
+    content: '';
+    width: 16px;
+    height: 9px;
+    border-left: 3px solid #ae0000;
+    border-bottom: 3px solid #ae0000;
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    transform: rotate(-50deg);
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+}
+
+.moreBtn {
+    padding: 15px 10px;
+    display: inline-block;
+    text-align: center;
+    width: 220px;
+    margin-top: 10px;
+    text-decoration: none!important;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #fff;
+    color: #ae0000;
+    border: 1px solid #ae0000;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    -moz-transition: all ease-in-out .3s;
+}
+
+.oursecretBox.bg-dark .moreBtn {
+    border-color: #ae0000;
+    color: #ae0000;
+}
+
+
+/*================================
+  button and hover start
+    ====================  */
+
+.moreBtn:hover {
+    color: #fff!important;
+    border-color: #ae0000;
+    background-color: #ae0000;
+}
+
+.moreBtn i {
+    color: #fff;
+    margin-left: -20px;
+    opacity: 0;
+    display: inline-block;
+    transition: all ease-in-out .1s;
+    -webkit-transition: all ease-in-out .1s;
+    -moz-transition: all ease-in-out .1s;
+}
+
+.moreBtn:hover i {
+    opacity: 1;
+    margin-left: 5px;
+}
+
+.wpx-220 {
+    width: 220px!important;
+}
+
+.wpx-260 {
+    width: 260px!important;
+}
+
+.scroll-top-arrow {
+    width: 40px;
+    height: 40px;
+    color: #fff!important;
+    text-decoration: none!important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+    position: fixed;
+    z-index: 111;
+    right: 20px;
+    bottom: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/*=====================================
+ media query for home page laptop section 
+ =============================================== */
+
+@media (max-width: 768px) {
+    .oursecretBox {
+        padding: 0 0!important;
+    }
+}

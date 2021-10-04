@@ -1,0 +1,541 @@
+@font-face {
+    font-family: britanifont;
+    src: url(/src/assets/fonts/CgBritanniaBold.ttf);
+}
+
+:root {
+    --red-color: #AE0000;
+}
+
+#main-wrapper {
+    overflow-x: hidden;
+}
+
+.active-link {
+
+    background-color:#000;
+    border: 1px solid #fff;
+    color:#FFF;
+    /* border: 1px solid white; */
+    /* padding-left: 8px;
+    padding-right: 8px !important */
+    /* color: var(--red-color); */ 
+}
+
+
+/* preloader css coding here   */
+
+.fa-adn {
+    font-size: 10rem;
+}
+
+
+/*=======================================
+       media quaery in nav section start here 
+      ======================================= */
+
+
+/* in mobile devies  */
+
+@media (max-width: 576px) {}
+
+
+/* in tablet devices  */
+
+@media (max-width: 768px) {
+    .navlinks li>a {
+        font-size: 2.3rem;
+        font-family: "United Sans Cd Hv", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    .active-link {
+        padding-left: 8px;
+        padding-right: 8px !important;
+    }
+    .logo_image log>a {
+        width: 100%;
+    }
+}
+
+
+/* in  Large devices  */
+
+@media (min-width: 992px) {}
+
+
+/* 
+#myScrollspy {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+} */
+
+
+/* =======================================side nabresponsive new navbar======================================================== */
+
+
+/* Navbar section */
+
+.nav {
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    line-height: 80px;
+    text-align: center;
+    z-index: 2;
+}
+
+.nav div.logo {
+    float: left;
+    width: auto;
+    height: auto;
+    padding-left: 3rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav div.logo a:hover {
+    color: #00E676;
+}
+
+.nav div.main_list {
+    height: 65px;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 65px;
+    padding-right: 1rem;
+}
+
+/* navbar   */
+.nav div.main_list ul li a {
+ 
+    text-decoration: none;
+    margin-top: 1rem;
+    color: #fff;
+    line-height: 25px;
+    font-size: 1.2rem;
+}
+
+.nav div.main_list ul li a:hover {
+    color: #00E676;
+}
+
+*/
+/* Home section */
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1498550744921-75f79806b8a7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=b0f6908fa5e81286213c7211276e6b3d&auto=format&fit=crop&w=1500&q=80);
+    background-position: center top;
+    background-size: cover;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.changebg {
+    color: black!important;
+    background-color: chartreuse!important;
+}
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        margin: 0;
+    }
+    .nav div.logo {
+        padding-left: 1rem!important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav {
+        line-height: 80px;
+    }
+    .nav div.logo {
+        padding-left: 0!important;
+    }
+    .nav {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .navTrigger {
+        display: block;
+    }
+    .nav div.logo {
+        margin-left: 15px;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+    }
+    .nav div.main_list ul {
+        clear: both;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 15px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #111;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: start;
+    }
+    .nav div.main_list ul li a {
+        text-align: start;
+        width: 100%;
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+.affix {
+    padding: 0;
+    background-color: #000000a6;
+    z-index: 99;
+  
+}
+
+
+/* Animation */
+
+
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: fixed;
+    right: 30px;
+    top: 25px;
+    z-index: 99999;
+}
+
+.navTrigger i {
+    background-color: #ff000098;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+
+/* right side sidebar menu */
+
+
+/* ======================
+ mobile sidebar slider css code 
+ ========================================== */
+
+@media (min-width:767.98px) {
+    .mobile_nav {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .mobile_nav {
+        display: block;
+    }
+    #mainListDiv {
+        display: none;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+    }
+    .toggle {
+        position: fixed;
+        top: 20px;
+        right: 40px;
+        z-index: 99999;
+    }
+    .toggle a {
+        text-decoration: none;
+        color: #262626;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .menu {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        background: #000;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -100%);
+        text-align: right;
+    }
+    ul li {
+        list-style: none;
+    }
+    ul li a {
+        padding: 8px;
+        display: inline-block;
+        font-family: verdana;
+        font-size: calc(1.5rem + 3vw);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "United Sans Cd Hv", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        color: #fff;
+        transition: all 0.5s ease;
+    }
+    ul li a:hover {
+        border: 2px solid rgb(173, 0, 0);
+        background-color: #fff;
+        color: black!important;
+    }
+    .menu.active {
+        z-index: 22;
+        right: 0;
+        overflow: auto;
+    }
+}
+
+.displayNone {
+    display: none;
+}
+
+.collapse.in {
+    display: block;
+}
+
+
+/* 
+@media (max-width:414px) {
+
+    #navbar{
+        top: 0;
+        position: fixed!important;
+    }
+
+} */

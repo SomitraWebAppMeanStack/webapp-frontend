@@ -1,0 +1,55 @@
+<div id="main-wrapper" onload="myFunction()">
+    <div id="loading"></div>
+
+    <!-- start header -->
+    <section >
+        <nav class="nav affix" id="navbar">
+            <div class="container logo_image" >
+                <div class="logo">
+                    <a class="navbar-brand nav-link" [routerLink]="'/'" title="WebApp"><img src="../assets/images/logo.png" data-rjs="../assets/images/logo.png" alt="logo "></a>
+                </div>
+
+                <div id="mainListDiv" class="main_list" >
+                    <ul class="navlinks" *ngFor="let item of NavbarData">
+                        <li class="nav-item"><a [style.color]="color" class="nav-link" [routerLink]="'/services'" routerLinkActive="active-link">{{item.services}}</a></li>
+                        <li class="nav-item"><a [style.color]="color" class="nav-link" [routerLink]="'/projects'" routerLinkActive="active-link">{{item.project}}</a></li>
+                        <!-- <li class="nav-item"><a [style.color]="color"  class="nav-link" [routerLink]="'/ourteam'" routerLinkActive="active-link">{{item.overteam}}</a></li> -->
+                        <li class="nav-item"><a [style.color]="color" class="nav-link" [routerLink]="'/contacts'" routerLinkActive="active-link">{{item.content}}</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+    <!-- in mobile section slider  -->
+    <div class="mobile_nav">
+        <!-- <div class="toggle">
+        <a><i class="text-white fa fa-bars"></i></a>
+    </div> -->
+        <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+    </span>
+
+        <div class="menu collapse in">
+            <ul>
+                <li class="nav-item "><a [style.color]="color" class="nav-link " [routerLink]="'/services'" routerLinkActive="active-link">Services</a></li>
+                <li class="nav-item "><a [style.color]="color" class="nav-link" [routerLink]="'/projects'" routerLinkActive="active-link">Projects</a></li>
+                <!-- <li class="nav-item"><a [style.color]="color" class="nav-link" [routerLink]="'/ourteam'" routerLinkActive="active-link">Our Team</a></li> -->
+                <li class="nav-item "><a [style.color]="color" class="nav-link" [routerLink]="'/contacts'" routerLinkActive="active-link">Contact</a></li>
+           
+            </ul>
+        </div>
+    </div>
+
+    <!-- end navigation -->
+
+
+    <!-- end header -->
+    <!-- preloader code here   -->
+
+
+    <router-outlet ></router-outlet>
+</div>

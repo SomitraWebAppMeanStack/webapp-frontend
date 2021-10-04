@@ -1,0 +1,77 @@
+.page--banner {
+	--hero-padding-offset: var(--app-banner-height, 0px);
+	--app-banner-height: 3.125rem
+}
+
+@media only screen and (max-width:47.9375em) {
+	.page--banner {
+		--app-banner-height: 2.625rem
+	}
+}
+
+.page--banner .u-header {
+	margin-top: var(--app-banner-height)
+}
+
+.u-banner {
+	align-items: center;
+	background: #000;
+	color: #f5f5f1;
+	display: flex;
+	height: var(--app-banner-height, 0);
+	justify-content: center;
+	overflow: hidden;
+	padding: 0 5.88235vw;
+	position: fixed;
+	width: 100vw;
+	z-index: 98
+}
+
+.u-banner .u-banner__text {
+	--link-opacity-idle: 0.75;
+	--link-opacity-hover: 1;
+	--link-opacity-active: 0.5;
+	display: block;
+	font-family: gtc, Helvetica Neue, sans-serif;
+	line-height: 1.4;
+	max-width: 42em;
+	font-size: .8125rem;
+	font-weight: 600;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+	text-overflow: ellipsis;
+	text-transform: uppercase;
+	white-space: nowrap
+}
+
+@media only screen and (min-width:48em) {
+	.u-banner .u-banner__text {
+		font-size: .875rem
+	}
+}
+
+@media only screen and (min-width:70.25em) {
+	.u-banner .u-banner__text {
+		font-size: .9375rem
+	}
+}
+
+@media only screen and (min-width:88.125em) {
+	.u-banner .u-banner__text {
+		font-size: 1.0625rem
+	}
+}
+
+@supports (-webkit-line-clamp:2) {
+	.u-banner .u-banner__text {
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		display: -webkit-box;
+		white-space: normal
+	}
+}
+
+.u-banner .u-banner__text--span {
+	opacity: var(--link-opacity-idle)
+}

@@ -1,0 +1,47 @@
+.m-block-hero .m-heading__span {
+    opacity: 1
+}
+
+.padding-custom {
+    padding-bottom: 20px;
+}
+
+.back-aco-me {
+    background-color: white !important;
+}
+
+span.m-heading__span.m-heading__span--1 {
+    font-size: 75px;
+}
+
+span.m-heading__span.m-heading__span--2 {
+    font-size: 75px;
+}
+
+.content-right {
+    float: right;
+}
+
+.content-right>a,
+.main-footer__copyrights {
+    font-size: 1rem;
+}
+
+.u-device-set--2 {
+    offset: -30%;
+}
+
+@media (max-width: 767.98px) {
+    .width50 {
+        width: 16rem;
+        margin: 40px 0 0 20px;
+    }
+}
+
+
+/* ================images height ==================== */
+
+.m-link--arrow-pseudo {
+    height: 45rem;
+}
+

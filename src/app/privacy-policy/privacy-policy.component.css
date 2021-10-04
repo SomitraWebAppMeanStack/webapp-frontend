@@ -1,0 +1,26 @@
+.privacy_policy {
+  margin-top: 7rem;
+}
+
+ul {
+  padding-left:20px;
+  list-style-position: inside;
+}
+
+ul li{
+    line-height: 30px;
+    color: rgb(73, 73, 73);
+}
+
+p {
+  color: rgb(73, 73, 73);
+  line-height: 30px;
+}
+
+.same_css{
+    padding: 1rem 0;
+    text-transform: capitalize!important;
+}
+.same_css h3{
+    text-transform: capitalize;
+}

@@ -1,0 +1,193 @@
+<div class="splash" id="Splash">
+  <div class="splash_logo ">
+    <img width="35%" src="../../assets/images/bg/landing_logo.png" alt="">
+  </div>
+  <div class="splash_svg">
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" />
+    </svg>
+  </div>
+  <div class="splash_minimize">
+    <svg width="100%" height="100%">
+      <rect width="100%" height="100%" />
+    </svg>
+  </div>
+</div>
+
+
+
+<section id="home" class="top-image-slider text " style="background-color: black;">
+  <div id="carouselExampleCaptions" class="view-height-set carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+  
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active" data-bs-interval="7000">
+
+        <!-- <app-oursecret></app-oursecret> -->
+        <!-- <img src="../assets/images/bg/sliderimage1.png" class=" slider d-block w-100" alt="image"> -->
+        <!-- 
+                <video class="videosize" width="100%" height="100%" autoplay="autoplay" muted="muted" loop="loop" preload="none">
+                    <source src="../../assets/images/bg/1v.mp4" type="video/mp4">
+                </video> -->
+
+
+        <video #videoElement [loop]="true" [muted]="true" [volume]="0.2" [autoplay]="true" playsinline id="bgVideo">
+          <source src="../../assets/images/bg/1v.mp4" type="video/mp4">
+        </video>
+
+
+        <div class="carousel-caption d-md-block">
+          <section class="container_forthslidertext">
+            <h1 class="title">
+              <span>TAKING YOUR COMPANY TO THE </span>
+              <span>NEXT LEVEL</span>
+            </h1>
+          </section>
+          <!-- <div class="sign">
+                        
+                        <span class="fast-flicker text-center text-white">TAKING YOUR COMPANY TO THE NEXT LEVEL</span>
+                      </div> -->
+          <!-- <h1 class="animated animate__zoomIn" style="animation-delay: 1s;"> TAKING COMPANIES TO THE NEXT LEVEL</h1> -->
+          <!-- <p class="animated animate__lightSpeedInLeft" style="animation-delay: 2s;">WebApp is a leading Mobile App Development Company and we design premium mobile apps to help your business reach a wider audience.</p> -->
+
+        </div>
+      </div>
+
+
+      <!-- 2rd  -->
+      <div class="carousel-item" data-bs-interval="6000">
+        <video #videoElement [loop]="true" [muted]="true" [volume]="0.2" [autoplay]="true" playsinline id="bgVideo">
+          <source src="../../assets/images/bg/2v.mp4" type="video/mp4">
+        </video>
+
+        <div class="carousel-caption d-md-block">
+          <!-- <h1 class="animated animate__zoomIn" style="animation-delay: 1s;">Growing future sales</h1> -->
+          <!-- secound slider css desing  -->
+          <!-- <div class="wrapper">
+                        <h1 >GROWING FUTURE SALES</h1>
+                      </div> -->
+
+          <section class="container_forthslidertext">
+            <h1 class="title">
+              <span>Growing future </span>
+              <span>sales</span>
+
+              <!-- <span>NEXT LEVEL</span> -->
+            </h1>
+          </section>
+
+        </div>
+      </div>
+
+
+
+
+
+      <!-- 5h  -->
+      <div class="carousel-item ">
+        <video #videoElement [loop]="true" [muted]="true" [volume]="0.2" [autoplay]="true" playsinline id="bgVideo">
+          <source src="../../assets/images/bg/5v.mp4" type="video/mp4">
+        </video>
+
+        <div class="carousel-caption d-md-block ">
+          <!-- <h1 class="animated animate__zoomIn" style="animation-delay: 1s;">INTUITIVE GAMING CONCEPT</h1> -->
+
+          <!-- <app-linecomp></app-linecomp> -->
+          <!-- <app-partical-one></app-partical-one> -->
+          <section class="container_forthslidertext">
+            <h1 class="title">
+              <span>Building The Latest </span>
+              <span> Technology</span>
+              <!-- <span>NEXT LEVEL</span> -->
+            </h1>
+          </section>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+  </div>
+</section>
+
+
+<!-- start Our Secret component-->
+
+<app-oursecret></app-oursecret>
+<!-- end Our Secret component-->
+
+
+
+<section class="oursecretBox bg-dark text-white mb-70vh bg-acc-me ">
+  <div class="container ">
+    <div class="row ">
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 color-acc-me">
+        <h2>THE ADVANTAGES OF HAVING AN APP</h2>
+        <p class="mb-1 fw-bold mt-4">Provide a valuable service to your customers</p>
+        <p class="margin-bottom ">A benefit of creating an app is that it enhances the user experience. A great customer
+          experience is more likely to encourage loyalty from customers since our consumer society constantly c.
+          Therefore, companies need to stay updated, and today, one way to do this is by integrating mobile
+          technologies. </p>
+
+        <p class="mb-1 fw-bold mt-4 ">Unique services and Features</p>
+        <p>To make your mobile application stand out from the competition, you may want to offer unique services to your
+          customers. To do that, simply add new functionality to your app and your set. </p>
+        <p class="margin-bottom ">Here are two features you could incorporate into your app if you haven’t thought to do
+          so yet: </p>
+
+        <p class="fw-bold">Push notifications </p>
+
+        <p class="margin-bottom ">A push notification is a time-tested and proven way of keeping users on your app and
+          using your services. </p>
+        <p class="fw-bold">Click to call and click for direction </p>
+        <p class="margin-bottom ">Integrating app buttons at strategic locations will help you convert leads to sales
+          even faster. </p>
+
+
+        <p class="mb-1 fw-bold mt-4">Improve Customer Engagement</p>
+        <p class="margin-bottom ">A well-developed app will help engage with your customers. Using tools such as
+          app-linked loyalty schemes and special app deals will help engage your target customers and keep you in touch.
+        </p>
+
+        <p class="mb-1 fw-bold mt-4 ">Establish your Brand</p>
+        <p>An advantage of a mobile app is that your companies brand image will appear more unified to users. Mobile
+          apps amplify and unify a company’s image. For the app to be successful, the design and communication style
+          must be consistent with the other communication channels. Because they provide a new channel of communication
+          with users or employees, many businesses include them in their marketing strategies. </p>
+
+
+
+        <a [routerLink]="'/projects'" class="nav-link moreBtn wpx-260 ">View Our Capabilities<i
+            class="ti-arrow-right "></i></a>
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-6 d-flex justify-content-center">
+        <img class="img-fluid" src="../assets/images/mobile-2.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- footer section start here  -->
+<app-footer></app-footer>
+
+<!-- end footer -->
+<!-- start scroll to top -->
+<a class="scroll-top-arrow " *ngIf="!isDownScrolled " (click)=" scrollToBottom() "><i class="ti-arrow-down "></i></a>
+<a class="scroll-top-arrow " *ngIf="isDownScrolled " (click)=" scrollToTop() "><i class="ti-arrow-up "></i></a>
+
+
+<!-- chat boat  -->
+<!-- <app-preloader></app-preloader> -->

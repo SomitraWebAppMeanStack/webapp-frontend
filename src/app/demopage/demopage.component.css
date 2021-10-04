@@ -1,0 +1,277 @@
+/*===============================
+     first image start here
+     ================================== */
+
+#projectSection{
+  overflow:hidden;
+
+}
+
+.first_image {
+  overflow: hidden;
+  margin-top: 12%;
+  position: relative;
+  width: 255px;
+  height: 530px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.col-lg-4, .col-sm-12, .col-lg-4{
+    padding: 0;
+}
+
+.project_image_section {
+  display: flex;
+  cursor: pointer;
+padding-left: 30px;
+  transition: 0.5s;
+  justify-content: center;
+
+  
+}
+
+.project_one_image {
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/*===============================
+     secound image start here
+     ================================== */
+.second_image {
+  overflow: hidden;
+  position: relative;
+  left: -30px;
+  width: 255px;
+  height: 530px;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+.project_second_image {
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 10px;
+
+
+}
+
+.first_image {
+  transform: translateY(10px);
+}
+
+.second_image {
+  transform: translateY(10px);
+}
+
+/* simgle mobile section   */
+.single_mobile_image{
+justify-content: center;
+padding-left: 0!important;
+}
+   /* ======================
+   laptop size screen css
+    ==================================*/
+    .first_image_laptop{
+        position: relative;
+        right: -35%;
+        width: 100%;
+        height: 500px;
+        background-color: transparent;
+        transform: translateZ(0);
+        transition: 0.5s;
+        float: right;
+}
+
+.project_one_image_laptop {
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 100%;
+  }
+
+  .project_image_section {
+    
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  /*=============== second laptop  =======================*/
+  .second_image_laptop {
+      cursor: pointer;
+    position: relative;
+    right: -90px;
+    width: 100%;
+    background-color: transparent;
+    transition: 0.5s;
+
+  }
+  
+  .project_second_image_laptop {
+
+    overflow: hidden;
+    position: absolute;
+    right: 55px;
+    top: 10rem;
+    width: 100%;
+  }
+  
+  .first_image_laptop:hover {
+    transform: translateX(-80px);
+    -webkit-transform: translateX(-80px);
+    -moz-transform: translateX(-80px);
+    -ms-transform: translateX(-80px);
+    -o-transform: translateX(-80px);
+}
+
+
+  .second_image_laptop:hover {
+    transform: translateX(100px);
+    -webkit-transform: translateX(100px);
+    -moz-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    -o-transform: translateX(100px);
+}
+
+
+.zoom_image:hover{
+  transform: scale(1.03)!important;
+  -ms-transform: scale(1.03)!important;
+  -webkit-transform: scale(1.03)!important;
+  -moz-transform: scale(1.03)!important;
+  -o-transform: scale(1.03)!important;
+}
+
+
+/* =====================heading section start here============================ */
+
+.project_box {
+  overflow: hidden;
+}
+
+.project_top_section{
+    display: flex;
+    margin: 50px 25px;
+}
+
+.project_top_section .top_logo_image img{
+    width: 50px;
+}
+
+.project_top_section .project_top_heading h3{
+    font-weight: 600;
+    font-size: 26px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+.project_top_heading{
+justify-content: center;
+display: flex;
+align-items: center;
+padding-left: 20px;
+}
+
+
+/* background color in product card images  */
+.bg1 {
+  background-image: linear-gradient(to right top, #5700af, #480096, #3a007d, #2d0066, #20004f);
+}
+.bg2 {
+  background-image: linear-gradient(to bottom, #0b131d, #152736, #193d51, #18556b, #106e85);
+}
+
+.bg3 {
+  background-image: linear-gradient(to right top, #5e5959, #544d4d, #4a4141, #413535, #372a2a);
+}
+.bg4 {
+  background-image: linear-gradient(to right top, #fbf6e0, #d9c197, #bd8b58, #a25224, #840000);
+}
+.bg5 {
+  background-image: linear-gradient(to right top, #821a74, #86549f, #8c80c0, #9da9d8, #bdcfe9);
+ 
+}
+
+.bg6 {
+  background-image: linear-gradient(to right top, #bdcfe9, #bfb6cb, #b5a2aa, #9f9190, #85817e);
+}
+.bg7 {
+  background-image: linear-gradient(to bottom, #0b121b, #182c3c, #1f495f, #1e6882, #1289a4);
+}
+.bg8 {
+  background-image: linear-gradient(to left, #c9cdd4, #9399a3, #616774, #333a49, #081121);
+}
+.bg9 {
+  background-image: linear-gradient(to left top, #ffffff, #d0c2d1, #ae8598, #8b4b54, #5b180c);
+}
+.bg10 {
+  background-image: linear-gradient(to bottom, #0b121b, #182c3c, #1f495f, #1e6882, #1289a4)
+}
+.bg11 {
+  background-color: #F8C46D;
+}
+.bg12 {
+  background-image: linear-gradient(to bottom, #ffffff, #cacad2, #9698a8, #626a7f, #2f3f59);
+}
+.bg13 {
+  background-image: linear-gradient(to right bottom, #141219, #1f1a33, #2a224f, #35296d, #422f8b);
+}
+.bg14 {
+  background-color: #16004E;
+
+}
+.bg15 {
+  background-color: #000000;
+}
+
+
+
+
+/* ========  hover to show arrow code =============================== */
+
+.project_top_heading {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .project_top_heading:after{
+    content: "→";
+    font-size: 3rem;
+    color: #fff;
+    font-family: gtc, Helvetica Neue, sans-serif;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 59%;
+    transform: translate(1.35em, -60%);
+    transition: opacity .25s ease, transform .25s ease;
+    -webkit-transform: translate(1.35em, -60%);
+    -moz-transform: translate(1.35em, -60%);
+    -ms-transform: translate(1.35em, -60%);
+    -o-transform: translate(1.35em, -60%);
+}
+  
+
+  
+  .project_top_heading:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  /* ======== end hover to show arrow code =============================== */

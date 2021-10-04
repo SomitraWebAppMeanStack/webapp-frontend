@@ -1,0 +1,27 @@
+
+#tearm_condition{
+    margin: 7rem 0;
+}
+.tearms_heading{
+  text-align: center;
+
+}
+.tearms_condition_content h3{
+margin: 1rem 0;
+}
+
+.tearms_condition_content p{
+    color: #69707a;
+    margin: 0.5rem 0;
+    font-weight: normal;
+}
+
+@media (max-width: 768px) { 
+
+     .tearms_condition_content h3,p{
+       text-align: center;
+    }
+
+
+
+ }
